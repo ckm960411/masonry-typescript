@@ -29,6 +29,8 @@ Masonry 란 '조적조'란 뜻으로, 대표적으로 핀터레스트 UI 를 생
 
 ```tsx
 const [cards, setCards] = useState<any[]>([])
+const [imagesLoading, setImagesLoading] = useState(false)
+const [isRendering, setIsRendering] = useState(true)
 
 <Masonry
   contents={cards}
